@@ -1,0 +1,6 @@
+<div class="m-2 p-2 border border-info">
+    <h1>Child Component</h1>
+    <button type="button" #greeting>Click here to Load Heavy Component</button>
+    @defer(on interaction(greeting)){<app-heavy></app-heavy>}@placeholder(minimum 3000ms){<h1>Loading...</h1>}
+    <!-- <app-heavy></app-heavy> -->
+</div>
