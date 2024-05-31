@@ -13,4 +13,6 @@ import { HeavyComponent } from './heavy/heavy.component';
 })
 export class AppComponent {
   title = 'ang18app';
+  x = 105
+  students=['anushka','samanta','veena','mahi']
 }

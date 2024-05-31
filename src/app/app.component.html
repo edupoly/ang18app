@@ -1,18 +1,6 @@
-<!-- <div class="m-2 p-2 border border-success">
-  <h1>App Component</h1>
-  <app-parent></app-parent>
-  <app-heavy></app-heavy>
-</div> -->
-<h1>App</h1>
-<ul>
-  <li>
-    <a routerLink="/parent">Parent</a>
-  </li>
-  <li>
-    <a routerLink="/child">Child</a>
-  </li>
-  <li>
-    <a routerLink="/heavy">Heavy</a>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<h1>{{x}}</h1>
+@if(x%2==0){<h1>Even</h1>}
+@else{<h1>Odd</h1>}
+@for(stu of students;track stu){
+  <h1>{{stu}}</h1>
+}
