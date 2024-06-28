@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ang18app';
+  anotherTitle=signal('anotherAngular')
+  constructor(){
+    setTimeout(()=>{
+      this.anotherTitle.set("Angular Zone based Detection");
+    },5000)
+  }
 }
